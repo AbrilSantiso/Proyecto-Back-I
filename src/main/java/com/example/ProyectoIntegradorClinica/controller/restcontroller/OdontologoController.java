@@ -17,13 +17,12 @@ public class OdontologoController {
 
     @GetMapping("/buscarId/{id}")
     public ResponseEntity<OdontologoDto> buscarPorId(@PathVariable("id") Integer id){
-        return ResponseEntity.ok(odontologoService.buscar(id));
 
-        /*if(os.buscar(id) != null){
-            return ResponseEntity.ok(os.buscar(id));
+        if(odontologoService.buscar(id) != null){
+            return ResponseEntity.ok(odontologoService.buscar(id));
         }else{
             return ResponseEntity.notFound().build();
-        }*/
+        }
 
     }
 

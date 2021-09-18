@@ -16,7 +16,7 @@ public class Paciente implements Serializable {
     private String apellido;
     private String dni;
     private LocalDate fechaIngreso;
-    @ManyToOne(cascade = CascadeType.ALL, optional = false) //Por omisión es EAGER, LAZY suele usarse mas para casos de relaciones OneToMany y ManyToMany. La propiedad optional queda en false porque un paciente siempre debe tener un domicilio
+    @ManyToOne(cascade = CascadeType.ALL, optional = false)
     @JoinColumn(name = "domicilio_id")
     private Domicilio domicilio;
 
