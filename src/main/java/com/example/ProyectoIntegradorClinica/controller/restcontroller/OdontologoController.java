@@ -16,12 +16,13 @@ public class OdontologoController {
     OdontologoService odontologoService;
 
     @GetMapping("/buscarId/{id}")
-    public ResponseEntity<OdontologoDto> buscarPorId(@PathVariable("id") Integer id){
+    public ResponseEntity<?> buscarPorId(@PathVariable("id") Integer id){
 
         if(odontologoService.buscar(id) != null){
             return ResponseEntity.ok(odontologoService.buscar(id));
         }else{
-            return ResponseEntity.notFound().build();
+
+            return ResponseEntity.badRequest().body("No se encontro el odontologo");
         }
 
     }
@@ -47,7 +48,7 @@ public class OdontologoController {
             odontologoService.eliminar(id);
             response = ResponseEntity.ok("Se eliminó el odontólogo con id "+id);
         }else{
-            response= ResponseEntity.badRequest().body("error");
+            response= ResponseEntity.badRequest().body("No existe el odontologo con el id" + id);
         }
         return response;
     }

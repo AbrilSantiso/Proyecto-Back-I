@@ -18,7 +18,11 @@ public class OdontologoService implements IService<OdontologoDto> {
 
     @Override
     public OdontologoDto buscar(Integer id) {
-        return new OdontologoDto(repository.getById(id));
+        if(repository.existsById(id)) {
+            return new OdontologoDto(repository.getById(id));
+        }else{
+            return null;
+        }
     }
 
     @Override
@@ -38,7 +42,6 @@ public class OdontologoService implements IService<OdontologoDto> {
     @Override
     public void eliminar(Integer id) {
         repository.delete(repository.getById(id));
-
     }
 
     @Override
