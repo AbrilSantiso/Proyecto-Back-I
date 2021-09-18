@@ -7,6 +7,7 @@ import com.example.ProyectoIntegradorClinica.service.IService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Service
@@ -17,8 +18,7 @@ public class OdontologoService implements IService<OdontologoDto> {
 
     @Override
     public OdontologoDto buscar(Integer id) {
-        OdontologoDto o = new OdontologoDto(repository.getById(id));
-       return o;
+        return new OdontologoDto(repository.getById(id));
     }
 
     @Override
@@ -31,16 +31,23 @@ public class OdontologoService implements IService<OdontologoDto> {
 
     @Override
     public OdontologoDto actualizar(OdontologoDto odontologoDto) {
-        return null;
+        repository.save(odontologoDto.toEntity());
+        return odontologoDto;
     }
 
     @Override
     public void eliminar(Integer id) {
+        repository.delete(repository.getById(id));
 
     }
 
     @Override
     public List<OdontologoDto> consultarTodos() {
-        return null;
+        List<OdontologoDto> odontologos = new ArrayList<>();
+
+        for(Odontologo o: repository.findAll()){
+            odontologos.add(new OdontologoDto(o));
+        }
+        return odontologos;
     }
 }
