@@ -4,7 +4,6 @@ import com.example.ProyectoIntegradorClinica.dto.PacienteDto;
 import com.example.ProyectoIntegradorClinica.persistence.entities.Paciente;
 import com.example.ProyectoIntegradorClinica.persistence.repository.IPacienteRepository;
 import com.example.ProyectoIntegradorClinica.service.IService;
-import com.example.ProyectoIntegradorClinica.service.imp.DomicilioService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -17,9 +16,6 @@ public class PacienteService implements IService<PacienteDto> {
 
     @Autowired
     IPacienteRepository repository;
-
-    @Autowired
-    DomicilioService domicilioService;
 
     @Override
     public PacienteDto crear(PacienteDto p) {
