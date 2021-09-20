@@ -16,7 +16,7 @@ public class Paciente implements Serializable {
     private String apellido;
     private String dni;
     private LocalDate fechaIngreso;
-    @ManyToOne(cascade = CascadeType.ALL, optional = false)
+    @OneToOne(cascade = CascadeType.ALL, optional = false)
     @JoinColumn(name = "domicilio_id")
     private Domicilio domicilio;
 

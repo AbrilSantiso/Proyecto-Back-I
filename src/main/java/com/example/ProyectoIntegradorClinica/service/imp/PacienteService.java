@@ -24,8 +24,9 @@ public class PacienteService implements IService<PacienteDto> {
     @Override
     public PacienteDto crear(PacienteDto p) {
         p.setFechaIngreso(LocalDate.now());
-        p.setId(repository.save(p.toEntity()).getId());
-        p.getDomicilio().setId(repository.save(p.toEntity()).getDomicilio().getId());
+        Paciente pacienteGuardado = repository.save(p.toEntity());
+        p.setId(pacienteGuardado.getId());
+        p.getDomicilio().setId(pacienteGuardado.getDomicilio().getId());
         return p;
     }
 
@@ -51,7 +52,8 @@ public class PacienteService implements IService<PacienteDto> {
 
     @Override
     public PacienteDto actualizar(PacienteDto p) {
-       // domicilioService.actualizar(p.getDomicilio());
+        Paciente pacienteEnBD = repository.getById(p.getId());
+        p.getDomicilio().setId(pacienteEnBD.getDomicilio().getId());
         repository.save(p.toEntity());
         return p;
     }
