@@ -3,6 +3,7 @@ package com.example.ProyectoIntegradorClinica.controller.restcontroller;
 
 import com.example.ProyectoIntegradorClinica.dto.PacienteDto;
 import com.example.ProyectoIntegradorClinica.service.imp.PacienteService;
+import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -16,8 +17,12 @@ public class PacienteController {
     @Autowired
     PacienteService pacienteService;
 
+    private final Logger logger = Logger.getLogger(PacienteController.class);
+
     @GetMapping("/buscarId/{id}")
     public ResponseEntity<?> buscarPorId(@PathVariable("id") Integer id){
+
+        logger.debug("Iniciando el método 'buscarPorId");
 
         if(pacienteService.buscar(id) != null){
             return ResponseEntity.ok(pacienteService.buscar(id));
@@ -28,17 +33,22 @@ public class PacienteController {
     }
 
     @GetMapping("/todos")
-    public ResponseEntity<List<PacienteDto>> getAll() {
+    public ResponseEntity<List<PacienteDto>> consultarTodos() {
+        logger.debug("Iniciando el método 'consultarTodos'");
         return ResponseEntity.ok(pacienteService.consultarTodos());
     }
 
     @PostMapping("/nuevo")
     public ResponseEntity<PacienteDto> crearNuevoPaciente(@RequestBody PacienteDto paciente){
+        logger.debug("Iniciando el método 'crearNuevo (paciente)'");
         return ResponseEntity.ok(pacienteService.crear(paciente));
     }
 
     @PutMapping("/actualizar")
     public ResponseEntity<PacienteDto> actualizarPaciente(@RequestBody PacienteDto paciente){
+
+        logger.debug("Iniciando el método 'actualizar(odontologo)'");
+
         if(paciente.getId() != null) {
             return ResponseEntity.ok(pacienteService.actualizar(paciente));
         }else{
@@ -49,6 +59,9 @@ public class PacienteController {
 
     @DeleteMapping("/eliminarId/{id}")
     public ResponseEntity<?> eliminarPorId(@PathVariable("id") Integer id){
+
+        logger.debug("Iniciando el método 'eliminarPorId'");
+        
         ResponseEntity<String> response;
         if(pacienteService.buscar(id) != null){
           pacienteService.eliminar(id);
