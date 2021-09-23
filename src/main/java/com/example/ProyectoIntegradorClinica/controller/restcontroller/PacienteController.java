@@ -25,8 +25,11 @@ public class PacienteController {
         logger.debug("Iniciando el método 'buscarPorId");
 
         if(pacienteService.buscar(id) != null){
+            logger.debug("Se encontro el paciente");
             return ResponseEntity.ok(pacienteService.buscar(id));
+
         }else{
+            logger.debug("No se encontro el paciente");
             return ResponseEntity.badRequest().body("No se encontro el paciente");
         }
 
@@ -50,8 +53,10 @@ public class PacienteController {
         logger.debug("Iniciando el método 'actualizar(odontologo)'");
 
         if(paciente.getId() != null) {
+            logger.debug("Se pudo actualizar el paciente");
             return ResponseEntity.ok(pacienteService.actualizar(paciente));
         }else{
+            logger.debug("No se pudo actualizar el paciente");
             return ResponseEntity.badRequest().body(paciente);
         }
 
@@ -66,8 +71,10 @@ public class PacienteController {
         if(pacienteService.buscar(id) != null){
           pacienteService.eliminar(id);
             response = ResponseEntity.ok("Se eliminó el paciente con id "+id);
+            logger.debug("Se eliminó el paciente con id "+id);
         }else{
             response= ResponseEntity.badRequest().body("No se encontro el paciente");
+            logger.debug("No se encontro el paciente con id "+id);
         }
         return response;
     }

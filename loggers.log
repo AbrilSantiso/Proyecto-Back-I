@@ -1,2 +1,5 @@
 [2021-09-20 14:49:27] [DEBUG] [PacienteController:43] Iniciando el método 'crearNuevo (paciente)'
 [2021-09-20 14:49:31] [DEBUG] [PacienteController:50] Iniciando el método 'actualizar(odontologo)'
+[2021-09-23 19:57:50] [DEBUG] [OdontologoController:25] Iniciando el método 'buscarPorId
+[2021-09-23 19:57:50] [DEBUG] [OdontologoController:30] No se encontró el odontologo, ResourceNotFoundException
+[2021-09-23 19:57:50] [INFO ] [GlobalExceptionHandler:17] No se encontro el odontologo

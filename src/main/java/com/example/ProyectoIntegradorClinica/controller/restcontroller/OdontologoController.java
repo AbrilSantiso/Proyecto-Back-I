@@ -1,6 +1,7 @@
 package com.example.ProyectoIntegradorClinica.controller.restcontroller;
 
 import com.example.ProyectoIntegradorClinica.dto.OdontologoDto;
+import com.example.ProyectoIntegradorClinica.exceptions.ResourceNotFoundException;
 import com.example.ProyectoIntegradorClinica.service.imp.OdontologoService;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,15 +20,16 @@ public class OdontologoController {
     private final Logger logger = Logger.getLogger(OdontologoController.class);
 
     @GetMapping("/buscarId/{id}")
-    public ResponseEntity<?> buscarPorId(@PathVariable("id") Integer id){
+    public ResponseEntity<?> buscarPorId(@PathVariable("id") Integer id) throws ResourceNotFoundException {
 
         logger.debug("Iniciando el método 'buscarPorId");
 
         if(odontologoService.buscar(id) != null){
             return ResponseEntity.ok(odontologoService.buscar(id));
         }else{
+            logger.debug("No se encontró el odontologo, ResourceNotFoundException");
+           throw new ResourceNotFoundException("No se encontro el odontologo");
 
-            return ResponseEntity.badRequest().body("No se encontro el odontologo");
         }
 
     }
