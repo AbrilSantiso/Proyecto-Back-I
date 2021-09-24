@@ -41,6 +41,8 @@ public class PacienteController {
         return ResponseEntity.ok(pacienteService.consultarTodos());
     }
 
+
+
     @PostMapping("/nuevo")
     public ResponseEntity<PacienteDto> crearNuevoPaciente(@RequestBody PacienteDto paciente){
         logger.debug("Iniciando el método 'crearNuevo (paciente)'");

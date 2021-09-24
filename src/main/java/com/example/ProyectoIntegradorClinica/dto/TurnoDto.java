@@ -6,8 +6,6 @@ import com.example.ProyectoIntegradorClinica.persistence.entities.Paciente;
 import com.example.ProyectoIntegradorClinica.persistence.entities.Turno;
 
 import java.time.LocalDateTime;
-import java.time.format.DateTimeFormatter;
-import java.util.Objects;
 
 public class TurnoDto {
 
@@ -80,8 +78,10 @@ public class TurnoDto {
     public boolean equals(Object o) {
         if (o == null || getClass() != o.getClass()) return false;
         TurnoDto turnoDto = (TurnoDto) o;
-        return (fechaYHora.equals(turnoDto.getFechaYHora()) && odontologo.getId() == turnoDto.getOdontologo().getId() && paciente.getId() == turnoDto.getPaciente().getId());
+        return (fechaYHora.equals(turnoDto.getFechaYHora()) && odontologo.getId() == turnoDto.getOdontologo().getId());
     }
+
+
 
 
 }

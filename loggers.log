@@ -64,3 +64,149 @@
 [2021-09-23 23:20:54] [DEBUG] [PacienteController:26] Iniciando el método 'crearNuevo (turno)'
 [2021-09-23 23:20:55] [DEBUG] [PacienteController:26] Iniciando el método 'crearNuevo (turno)'
 [2021-09-23 23:21:00] [DEBUG] [PacienteController:26] Iniciando el método 'crearNuevo (turno)'
+[2021-09-24 14:39:52] [DEBUG] [OdontologoController:40] Iniciando el método 'crearNuevo (odontologo)'
+[2021-09-24 14:39:57] [DEBUG] [PacienteController:46] Iniciando el método 'crearNuevo (paciente)'
+[2021-09-24 14:40:04] [DEBUG] [PacienteController:26] Iniciando el método 'crearNuevo (turno)'
+[2021-09-24 14:58:00] [DEBUG] [OdontologoController:40] Iniciando el método 'crearNuevo (odontologo)'
+[2021-09-24 14:58:09] [DEBUG] [PacienteController:46] Iniciando el método 'crearNuevo (paciente)'
+[2021-09-24 14:58:22] [DEBUG] [PacienteController:23] Iniciando el método 'crearNuevo (turno)'
+[2021-09-24 15:00:06] [DEBUG] [PacienteController:30] Iniciando el método 'actualizar(turno)'
+[2021-09-24 15:00:06] [DEBUG] [PacienteController:33] Se pudo actualizar el turno
+[2021-09-24 15:11:28] [DEBUG] [PacienteController:30] Iniciando el método 'actualizar(turno)'
+[2021-09-24 15:11:28] [DEBUG] [PacienteController:33] Se pudo actualizar el turno
+[2021-09-24 15:20:10] [DEBUG] [PacienteController:30] Iniciando el método 'actualizar(turno)'
+[2021-09-24 15:20:10] [DEBUG] [PacienteController:33] Se pudo actualizar el turno
+[2021-09-24 15:20:42] [DEBUG] [PacienteController:30] Iniciando el método 'actualizar(turno)'
+[2021-09-24 15:20:42] [DEBUG] [PacienteController:33] Se pudo actualizar el turno
+[2021-09-24 15:20:51] [DEBUG] [OdontologoController:40] Iniciando el método 'crearNuevo (odontologo)'
+[2021-09-24 15:20:54] [DEBUG] [PacienteController:46] Iniciando el método 'crearNuevo (paciente)'
+[2021-09-24 15:20:59] [DEBUG] [PacienteController:23] Iniciando el método 'crearNuevo (turno)'
+[2021-09-24 15:21:04] [DEBUG] [PacienteController:30] Iniciando el método 'actualizar(turno)'
+[2021-09-24 15:21:04] [DEBUG] [PacienteController:33] Se pudo actualizar el turno
+[2021-09-24 15:21:25] [DEBUG] [PacienteController:30] Iniciando el método 'actualizar(turno)'
+[2021-09-24 15:21:25] [DEBUG] [PacienteController:33] Se pudo actualizar el turno
+[2021-09-24 15:22:26] [DEBUG] [PacienteController:30] Iniciando el método 'actualizar(turno)'
+[2021-09-24 15:22:26] [DEBUG] [PacienteController:33] Se pudo actualizar el turno
+[2021-09-24 15:22:59] [DEBUG] [OdontologoController:40] Iniciando el método 'crearNuevo (odontologo)'
+[2021-09-24 15:23:04] [DEBUG] [PacienteController:46] Iniciando el método 'crearNuevo (paciente)'
+[2021-09-24 15:23:09] [DEBUG] [PacienteController:23] Iniciando el método 'crearNuevo (turno)'
+[2021-09-24 15:23:13] [DEBUG] [PacienteController:30] Iniciando el método 'actualizar(turno)'
+[2021-09-24 15:23:13] [DEBUG] [PacienteController:33] Se pudo actualizar el turno
+[2021-09-24 15:26:18] [DEBUG] [OdontologoController:40] Iniciando el método 'crearNuevo (odontologo)'
+[2021-09-24 15:26:22] [DEBUG] [PacienteController:46] Iniciando el método 'crearNuevo (paciente)'
+[2021-09-24 15:26:25] [DEBUG] [PacienteController:23] Iniciando el método 'crearNuevo (turno)'
+[2021-09-24 15:26:33] [DEBUG] [PacienteController:30] Iniciando el método 'actualizar(turno)'
+[2021-09-24 15:26:33] [DEBUG] [PacienteController:33] Se pudo actualizar el turno
+[2021-09-24 15:29:54] [DEBUG] [OdontologoController:40] Iniciando el método 'crearNuevo (odontologo)'
+[2021-09-24 15:29:57] [DEBUG] [PacienteController:46] Iniciando el método 'crearNuevo (paciente)'
+[2021-09-24 15:30:00] [DEBUG] [PacienteController:23] Iniciando el método 'crearNuevo (turno)'
+[2021-09-24 15:30:05] [DEBUG] [PacienteController:30] Iniciando el método 'actualizar(turno)'
+[2021-09-24 15:30:05] [DEBUG] [PacienteController:33] Se pudo actualizar el turno
+[2021-09-24 15:32:06] [DEBUG] [OdontologoController:40] Iniciando el método 'crearNuevo (odontologo)'
+[2021-09-24 15:32:09] [DEBUG] [PacienteController:46] Iniciando el método 'crearNuevo (paciente)'
+[2021-09-24 15:32:11] [DEBUG] [PacienteController:23] Iniciando el método 'crearNuevo (turno)'
+[2021-09-24 15:32:16] [DEBUG] [PacienteController:30] Iniciando el método 'actualizar(turno)'
+[2021-09-24 15:32:16] [DEBUG] [PacienteController:33] Se pudo actualizar el turno
+[2021-09-24 15:33:46] [DEBUG] [OdontologoController:40] Iniciando el método 'crearNuevo (odontologo)'
+[2021-09-24 15:33:50] [DEBUG] [PacienteController:46] Iniciando el método 'crearNuevo (paciente)'
+[2021-09-24 15:34:04] [DEBUG] [PacienteController:23] Iniciando el método 'crearNuevo (turno)'
+[2021-09-24 15:34:14] [DEBUG] [PacienteController:30] Iniciando el método 'actualizar(turno)'
+[2021-09-24 15:34:14] [DEBUG] [PacienteController:33] Se pudo actualizar el turno
+[2021-09-24 15:35:15] [DEBUG] [OdontologoController:40] Iniciando el método 'crearNuevo (odontologo)'
+[2021-09-24 15:35:17] [DEBUG] [PacienteController:46] Iniciando el método 'crearNuevo (paciente)'
+[2021-09-24 15:35:27] [DEBUG] [PacienteController:23] Iniciando el método 'crearNuevo (turno)'
+[2021-09-24 15:35:32] [DEBUG] [PacienteController:30] Iniciando el método 'actualizar(turno)'
+[2021-09-24 15:35:32] [DEBUG] [PacienteController:33] Se pudo actualizar el turno
+[2021-09-24 15:36:52] [DEBUG] [OdontologoController:40] Iniciando el método 'crearNuevo (odontologo)'
+[2021-09-24 15:36:55] [DEBUG] [PacienteController:46] Iniciando el método 'crearNuevo (paciente)'
+[2021-09-24 15:36:59] [DEBUG] [PacienteController:23] Iniciando el método 'crearNuevo (turno)'
+[2021-09-24 15:37:04] [DEBUG] [PacienteController:30] Iniciando el método 'actualizar(turno)'
+[2021-09-24 15:37:04] [DEBUG] [PacienteController:33] Se pudo actualizar el turno
+[2021-09-24 15:41:23] [DEBUG] [OdontologoController:40] Iniciando el método 'crearNuevo (odontologo)'
+[2021-09-24 15:41:25] [DEBUG] [PacienteController:46] Iniciando el método 'crearNuevo (paciente)'
+[2021-09-24 15:41:30] [DEBUG] [PacienteController:23] Iniciando el método 'crearNuevo (turno)'
+[2021-09-24 15:41:32] [DEBUG] [PacienteController:30] Iniciando el método 'actualizar(turno)'
+[2021-09-24 15:41:32] [DEBUG] [PacienteController:33] Se pudo actualizar el turno
+[2021-09-24 15:45:46] [DEBUG] [OdontologoController:40] Iniciando el método 'crearNuevo (odontologo)'
+[2021-09-24 15:45:50] [DEBUG] [PacienteController:46] Iniciando el método 'crearNuevo (paciente)'
+[2021-09-24 15:45:54] [DEBUG] [PacienteController:23] Iniciando el método 'crearNuevo (turno)'
+[2021-09-24 15:45:57] [DEBUG] [PacienteController:30] Iniciando el método 'actualizar(turno)'
+[2021-09-24 15:45:57] [DEBUG] [PacienteController:33] Se pudo actualizar el turno
+[2021-09-24 15:48:08] [DEBUG] [OdontologoController:40] Iniciando el método 'crearNuevo (odontologo)'
+[2021-09-24 15:48:13] [DEBUG] [PacienteController:46] Iniciando el método 'crearNuevo (paciente)'
+[2021-09-24 15:48:17] [DEBUG] [PacienteController:23] Iniciando el método 'crearNuevo (turno)'
+[2021-09-24 15:48:21] [DEBUG] [PacienteController:30] Iniciando el método 'actualizar(turno)'
+[2021-09-24 15:48:21] [DEBUG] [PacienteController:33] Se pudo actualizar el turno
+[2021-09-24 15:48:44] [DEBUG] [PacienteController:30] Iniciando el método 'actualizar(turno)'
+[2021-09-24 15:48:44] [DEBUG] [PacienteController:33] Se pudo actualizar el turno
+[2021-09-24 15:48:55] [DEBUG] [PacienteController:30] Iniciando el método 'actualizar(turno)'
+[2021-09-24 15:48:55] [DEBUG] [PacienteController:33] Se pudo actualizar el turno
+[2021-09-24 15:49:04] [DEBUG] [PacienteController:30] Iniciando el método 'actualizar(turno)'
+[2021-09-24 15:49:04] [DEBUG] [PacienteController:33] Se pudo actualizar el turno
+[2021-09-24 15:49:22] [DEBUG] [PacienteController:30] Iniciando el método 'actualizar(turno)'
+[2021-09-24 15:49:22] [DEBUG] [PacienteController:33] Se pudo actualizar el turno
+[2021-09-24 15:49:39] [DEBUG] [PacienteController:30] Iniciando el método 'actualizar(turno)'
+[2021-09-24 15:49:39] [DEBUG] [PacienteController:33] Se pudo actualizar el turno
+[2021-09-24 15:51:07] [DEBUG] [PacienteController:30] Iniciando el método 'actualizar(turno)'
+[2021-09-24 15:51:07] [DEBUG] [PacienteController:33] Se pudo actualizar el turno
+[2021-09-24 15:52:18] [DEBUG] [PacienteController:30] Iniciando el método 'actualizar(turno)'
+[2021-09-24 15:52:18] [DEBUG] [PacienteController:33] Se pudo actualizar el turno
+[2021-09-24 15:52:41] [DEBUG] [PacienteController:30] Iniciando el método 'actualizar(turno)'
+[2021-09-24 15:52:41] [DEBUG] [PacienteController:33] Se pudo actualizar el turno
+[2021-09-24 15:53:06] [DEBUG] [PacienteController:30] Iniciando el método 'actualizar(turno)'
+[2021-09-24 15:53:06] [DEBUG] [PacienteController:33] Se pudo actualizar el turno
+[2021-09-24 15:53:20] [DEBUG] [PacienteController:30] Iniciando el método 'actualizar(turno)'
+[2021-09-24 15:53:20] [DEBUG] [PacienteController:33] Se pudo actualizar el turno
+[2021-09-24 15:53:39] [DEBUG] [PacienteController:30] Iniciando el método 'actualizar(turno)'
+[2021-09-24 15:53:39] [DEBUG] [PacienteController:33] Se pudo actualizar el turno
+[2021-09-24 15:56:36] [DEBUG] [PacienteController:30] Iniciando el método 'actualizar(turno)'
+[2021-09-24 15:56:36] [DEBUG] [PacienteController:33] Se pudo actualizar el turno
+[2021-09-24 15:56:45] [DEBUG] [PacienteController:30] Iniciando el método 'actualizar(turno)'
+[2021-09-24 15:56:45] [DEBUG] [PacienteController:33] Se pudo actualizar el turno
+[2021-09-24 15:56:55] [DEBUG] [PacienteController:30] Iniciando el método 'actualizar(turno)'
+[2021-09-24 15:56:55] [DEBUG] [PacienteController:33] Se pudo actualizar el turno
+[2021-09-24 16:01:38] [DEBUG] [OdontologoController:40] Iniciando el método 'crearNuevo (odontologo)'
+[2021-09-24 16:01:42] [DEBUG] [PacienteController:46] Iniciando el método 'crearNuevo (paciente)'
+[2021-09-24 16:01:50] [DEBUG] [PacienteController:23] Iniciando el método 'crearNuevo (turno)'
+[2021-09-24 16:02:02] [DEBUG] [PacienteController:30] Iniciando el método 'actualizar(turno)'
+[2021-09-24 16:02:02] [DEBUG] [PacienteController:36] No se pudo actualizar el turno
+[2021-09-24 16:02:36] [DEBUG] [PacienteController:30] Iniciando el método 'actualizar(turno)'
+[2021-09-24 16:02:36] [DEBUG] [PacienteController:33] Se pudo actualizar el turno
+[2021-09-24 16:02:57] [DEBUG] [PacienteController:30] Iniciando el método 'actualizar(turno)'
+[2021-09-24 16:02:57] [DEBUG] [PacienteController:33] Se pudo actualizar el turno
+[2021-09-24 16:04:30] [DEBUG] [PacienteController:23] Iniciando el método 'crearNuevo (turno)'
+[2021-09-24 16:04:53] [DEBUG] [PacienteController:23] Iniciando el método 'crearNuevo (turno)'
+[2021-09-24 16:05:00] [DEBUG] [PacienteController:23] Iniciando el método 'crearNuevo (turno)'
+[2021-09-24 16:05:13] [DEBUG] [PacienteController:23] Iniciando el método 'crearNuevo (turno)'
+[2021-09-24 16:06:29] [DEBUG] [PacienteController:30] Iniciando el método 'actualizar(turno)'
+[2021-09-24 16:06:29] [DEBUG] [PacienteController:33] Se pudo actualizar el turno
+[2021-09-24 16:06:48] [DEBUG] [PacienteController:30] Iniciando el método 'actualizar(turno)'
+[2021-09-24 16:06:48] [DEBUG] [PacienteController:33] Se pudo actualizar el turno
+[2021-09-24 16:06:55] [DEBUG] [PacienteController:30] Iniciando el método 'actualizar(turno)'
+[2021-09-24 16:06:55] [DEBUG] [PacienteController:33] Se pudo actualizar el turno
+[2021-09-24 16:11:39] [DEBUG] [OdontologoController:40] Iniciando el método 'crearNuevo (odontologo)'
+[2021-09-24 16:11:44] [DEBUG] [PacienteController:46] Iniciando el método 'crearNuevo (paciente)'
+[2021-09-24 16:11:50] [DEBUG] [PacienteController:23] Iniciando el método 'crearNuevo (turno)'
+[2021-09-24 16:12:14] [DEBUG] [PacienteController:45] Iniciando el método 'eliminarPorId'
+[2021-09-24 16:12:14] [DEBUG] [PacienteController:51] Se eliminó el turno con id 1
+[2021-09-24 16:12:21] [DEBUG] [PacienteController:45] Iniciando el método 'eliminarPorId'
+[2021-09-24 16:12:21] [DEBUG] [PacienteController:54] No se encontro el turno con id 1
+[2021-09-24 16:46:26] [DEBUG] [OdontologoController:40] Iniciando el método 'crearNuevo (odontologo)'
+[2021-09-24 16:46:44] [DEBUG] [PacienteController:46] Iniciando el método 'crearNuevo (paciente)'
+[2021-09-24 16:46:50] [DEBUG] [PacienteController:23] Iniciando el método 'crearNuevo (turno)'
+[2021-09-24 16:46:55] [DEBUG] [PacienteController:23] Iniciando el método 'crearNuevo (turno)'
+[2021-09-24 16:46:59] [DEBUG] [PacienteController:23] Iniciando el método 'crearNuevo (turno)'
+[2021-09-24 16:50:27] [DEBUG] [OdontologoController:40] Iniciando el método 'crearNuevo (odontologo)'
+[2021-09-24 16:50:30] [DEBUG] [PacienteController:48] Iniciando el método 'crearNuevo (paciente)'
+[2021-09-24 16:50:33] [DEBUG] [PacienteController:52] Iniciando el método 'crearNuevo (turno)'
+[2021-09-24 16:50:35] [DEBUG] [PacienteController:52] Iniciando el método 'crearNuevo (turno)'
+[2021-09-24 16:50:38] [DEBUG] [PacienteController:52] Iniciando el método 'crearNuevo (turno)'
+[2021-09-24 16:50:40] [DEBUG] [PacienteController:46] Iniciando el método 'consultarProximosTurnos'
+[2021-09-24 16:53:30] [DEBUG] [OdontologoController:40] Iniciando el método 'crearNuevo (odontologo)'
+[2021-09-24 16:53:33] [DEBUG] [PacienteController:48] Iniciando el método 'crearNuevo (paciente)'
+[2021-09-24 16:53:35] [DEBUG] [PacienteController:52] Iniciando el método 'crearNuevo (turno)'
+[2021-09-24 16:53:38] [DEBUG] [PacienteController:52] Iniciando el método 'crearNuevo (turno)'
+[2021-09-24 16:53:41] [DEBUG] [PacienteController:52] Iniciando el método 'crearNuevo (turno)'
+[2021-09-24 16:53:45] [DEBUG] [PacienteController:46] Iniciando el método 'consultarProximosTurnos'
+[2021-09-24 16:54:39] [DEBUG] [PacienteController:52] Iniciando el método 'crearNuevo (turno)'
+[2021-09-24 16:54:42] [DEBUG] [PacienteController:46] Iniciando el método 'consultarProximosTurnos'
