@@ -1,6 +1,8 @@
 package com.example.ProyectoIntegradorClinica.controller.restcontroller;
 
 import com.example.ProyectoIntegradorClinica.dto.TurnoDto;
+import com.example.ProyectoIntegradorClinica.exceptions.BadRequestException;
+import com.example.ProyectoIntegradorClinica.exceptions.ResourceNotFoundException;
 import com.example.ProyectoIntegradorClinica.service.imp.TurnoService;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -28,7 +30,7 @@ public class TurnoController {
     }
 
     @GetMapping("/buscarId/{id}")
-    public ResponseEntity<?> buscarPorId(@PathVariable("id") Integer id){
+    public ResponseEntity<?> buscarPorId(@PathVariable("id") Integer id) throws ResourceNotFoundException {
 
         logger.debug("Iniciando el método 'buscarPorId");
 
@@ -38,7 +40,7 @@ public class TurnoController {
 
         }else{
             logger.debug("No se encontro el turno");
-            return ResponseEntity.badRequest().body("No se encontro el turno");
+            throw new ResourceNotFoundException("No se encontro el turno");
         }
 
     }
@@ -56,34 +58,35 @@ public class TurnoController {
     }
 
     @PutMapping("/actualizar")
-    public ResponseEntity<?> actualizarTurno(@RequestBody TurnoDto turno){
+    public ResponseEntity<?> actualizarTurno(@RequestBody TurnoDto turno) throws BadRequestException, ResourceNotFoundException {
 
         logger.debug("Iniciando el método 'actualizar(turno)'");
 
-        if(turno.getId() != null) {
-            logger.debug("Se pudo actualizar el turno");
-            return ResponseEntity.ok(turnoService.actualizar(turno));
-        }else{
-            logger.debug("No se pudo actualizar el turno");
-            return ResponseEntity.badRequest().body("No se pudo actualizar el turno porque no es valido");
+        if (turno.getId() == null) {
+            throw new BadRequestException("Es necesario el id del turno");
+        } else {
+            if (turnoService.buscar(turno.getId()) != null) {
+                logger.debug("Se pudo actualizar el turno");
+                return ResponseEntity.ok(turnoService.actualizar(turno));
+            } else {
+                throw new ResourceNotFoundException("No se encontro el turno con el id " + turno.getId());
+            }
         }
 
     }
 
     @DeleteMapping("/eliminarId/{id}")
-    public ResponseEntity<String> eliminarPorId(@PathVariable("id") Integer id){
+    public ResponseEntity<String> eliminarPorId(@PathVariable("id") Integer id) throws ResourceNotFoundException {
 
         logger.debug("Iniciando el método 'eliminarPorId'");
 
-        ResponseEntity<String> response;
         if(turnoService.buscar(id) != null){
-         turnoService.eliminar(id);
-            response = ResponseEntity.ok("Se eliminó el turno con id "+id);
+            turnoService.eliminar(id);
             logger.debug("Se eliminó el turno con id "+id);
+            return ResponseEntity.ok("Se eliminó el turno con id "+id);
         }else{
-            response= ResponseEntity.badRequest().body("No se encontro el turno");
             logger.debug("No se encontro el turno con id "+id);
+            throw new ResourceNotFoundException("No se encontro el turno con el id " + id);
         }
-        return response;
     }
 }

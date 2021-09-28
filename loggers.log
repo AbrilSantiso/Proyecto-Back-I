@@ -242,3 +242,12 @@
 [2021-09-27 22:18:39] [DEBUG] [OdontologoController:48] Iniciando el método 'actualizar(odontologo)'
 [2021-09-27 22:18:39] [INFO ] [GlobalExceptionHandler:17] No se encontro el odontologo con el id 7
 [2021-09-27 22:18:47] [DEBUG] [OdontologoController:48] Iniciando el método 'actualizar(odontologo)'
+[2021-09-27 22:44:40] [DEBUG] [OdontologoController:41] Iniciando el método 'crearNuevo (odontologo)'
+[2021-09-27 22:45:40] [DEBUG] [OdontologoController:48] Iniciando el método 'actualizar(odontologo)'
+[2021-09-27 22:45:40] [ERROR] [GlobalExceptionHandler:23] Es necesario el id del odontologo
+[2021-09-27 22:46:20] [DEBUG] [OdontologoController:48] Iniciando el método 'actualizar(odontologo)'
+[2021-09-27 22:46:20] [INFO ] [GlobalExceptionHandler:17] No se encontro el odontologo con el id 3
+[2021-09-27 22:46:33] [DEBUG] [OdontologoController:48] Iniciando el método 'actualizar(odontologo)'
+[2021-09-27 22:46:42] [DEBUG] [OdontologoController:48] Iniciando el método 'actualizar(odontologo)'
+[2021-09-27 22:46:53] [DEBUG] [OdontologoController:41] Iniciando el método 'crearNuevo (odontologo)'
+[2021-09-27 22:47:13] [DEBUG] [OdontologoController:76] Iniciando el método 'consultarTodos'
