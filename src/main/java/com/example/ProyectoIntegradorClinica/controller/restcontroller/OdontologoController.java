@@ -47,19 +47,19 @@ public class OdontologoController {
 
         logger.debug("Iniciando el método 'actualizar(odontologo)'");
 
-        if(odontologoService.buscar(odontologo.getId()) != null){
-            return ResponseEntity.ok(odontologoService.actualizar(odontologo));
-        }else{
-            if (odontologo.getId()!= null){
+        if (odontologo.getId() == null) {
+            throw new BadRequestException("Es necesario el id del odontologo");
+        } else {
+            if (odontologoService.buscar(odontologo.getId()) != null) {
+                return ResponseEntity.ok(odontologoService.actualizar(odontologo));
+            } else {
                 throw new ResourceNotFoundException("No se encontro el odontologo con el id " + odontologo.getId());
-            }else{
-                throw new BadRequestException("Es necesario el id del odontologo");
             }
         }
     }
 
     @DeleteMapping("/eliminarId/{id}")
-    public ResponseEntity<?> eliminarPorId(@PathVariable("id") Integer id) throws ResourceNotFoundException, BadRequestException{
+    public ResponseEntity<?> eliminarPorId(@PathVariable("id") Integer id) throws ResourceNotFoundException{
 
         logger.debug("Iniciando el método 'eliminarPorId'");
 
