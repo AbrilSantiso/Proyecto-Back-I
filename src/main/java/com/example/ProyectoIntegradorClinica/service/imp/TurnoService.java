@@ -6,6 +6,7 @@ import com.example.ProyectoIntegradorClinica.persistence.entities.Turno;
 import com.example.ProyectoIntegradorClinica.persistence.repository.ITurnoRepository;
 import com.example.ProyectoIntegradorClinica.service.IService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDateTime;
@@ -53,6 +54,7 @@ public class TurnoService implements IService<TurnoDto> {
     public void eliminar(Integer id) {
         repository.delete(repository.getById(id));
     }
+
 
     @Override
     public List<TurnoDto> consultarTodos() {

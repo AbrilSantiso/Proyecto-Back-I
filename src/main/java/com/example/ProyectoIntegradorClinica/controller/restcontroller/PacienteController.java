@@ -52,7 +52,7 @@ public class PacienteController {
     @PutMapping("/actualizar")
     public ResponseEntity<PacienteDto> actualizarPaciente(@RequestBody PacienteDto paciente){
 
-        logger.debug("Iniciando el método 'actualizar(odontologo)'");
+        logger.debug("Iniciando el método 'actualizar(paciente)'");
 
         if(paciente.getId() != null) {
             logger.debug("Se pudo actualizar el paciente");

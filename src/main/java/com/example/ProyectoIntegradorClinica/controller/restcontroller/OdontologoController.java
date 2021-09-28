@@ -1,6 +1,7 @@
 package com.example.ProyectoIntegradorClinica.controller.restcontroller;
 
 import com.example.ProyectoIntegradorClinica.dto.OdontologoDto;
+import com.example.ProyectoIntegradorClinica.exceptions.BadRequestException;
 import com.example.ProyectoIntegradorClinica.exceptions.ResourceNotFoundException;
 import com.example.ProyectoIntegradorClinica.service.imp.OdontologoService;
 import org.apache.log4j.Logger;
@@ -27,7 +28,7 @@ public class OdontologoController {
         if(odontologoService.buscar(id) != null){
             return ResponseEntity.ok(odontologoService.buscar(id));
         }else{
-            logger.debug("No se encontró el odontologo, ResourceNotFoundException");
+            logger.debug("No se encontró el odontologo");
            throw new ResourceNotFoundException("No se encontro el odontologo");
 
         }
@@ -42,30 +43,32 @@ public class OdontologoController {
     }
 
     @PutMapping("/actualizar")
-    public ResponseEntity<OdontologoDto> actualizar(@RequestBody OdontologoDto odontologo){
+    public ResponseEntity<?> actualizar(@RequestBody OdontologoDto odontologo) throws ResourceNotFoundException, BadRequestException {
 
         logger.debug("Iniciando el método 'actualizar(odontologo)'");
 
-        if(odontologo.getId() != null){
+        if(odontologoService.buscar(odontologo.getId()) != null){
             return ResponseEntity.ok(odontologoService.actualizar(odontologo));
         }else{
-            return ResponseEntity.badRequest().body(odontologo);
+            if (odontologo.getId()!= null){
+                throw new ResourceNotFoundException("No se encontro el odontologo con el id " + odontologo.getId());
+            }else{
+                throw new BadRequestException("Es necesario el id del odontologo");
+            }
         }
     }
 
     @DeleteMapping("/eliminarId/{id}")
-    public ResponseEntity<?> eliminarPorId(@PathVariable("id") Integer id){
+    public ResponseEntity<?> eliminarPorId(@PathVariable("id") Integer id) throws ResourceNotFoundException, BadRequestException{
 
         logger.debug("Iniciando el método 'eliminarPorId'");
 
-        ResponseEntity<String> response;
         if(odontologoService.buscar(id) != null){
             odontologoService.eliminar(id);
-            response = ResponseEntity.ok("Se eliminó el odontólogo con id "+id);
-        }else{
-            response= ResponseEntity.badRequest().body("No existe el odontologo con el id" + id);
+             return ResponseEntity.ok("Se eliminó el odontólogo con id "+id);
+        }else {
+                throw new ResourceNotFoundException("No se encontro el odontologo con el id " + id);
         }
-        return response;
     }
 
     @GetMapping("/todos")

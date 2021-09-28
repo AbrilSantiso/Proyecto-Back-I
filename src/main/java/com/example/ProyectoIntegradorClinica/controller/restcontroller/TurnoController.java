@@ -1,12 +1,13 @@
 package com.example.ProyectoIntegradorClinica.controller.restcontroller;
 
-import com.example.ProyectoIntegradorClinica.dto.PacienteDto;
 import com.example.ProyectoIntegradorClinica.dto.TurnoDto;
 import com.example.ProyectoIntegradorClinica.service.imp.TurnoService;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
+
 
 import java.util.List;
 
@@ -18,6 +19,7 @@ public class TurnoController {
     TurnoService turnoService;
 
     private final Logger logger = Logger.getLogger(PacienteController.class);
+
 
     @GetMapping("/todos")
     public ResponseEntity<List<TurnoDto>> consultarTodos() {
