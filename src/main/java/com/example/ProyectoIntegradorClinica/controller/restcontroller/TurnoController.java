@@ -51,6 +51,7 @@ public class TurnoController {
         return ResponseEntity.ok(turnoService.consultarProximosTurnos());
     }
 
+    @PreAuthorize("hasAuthority('ADMIN')")
     @PostMapping("/nuevo")
     public ResponseEntity<TurnoDto> crearNuevoTurno(@RequestBody TurnoDto turno){
         logger.debug("Iniciando el método 'crearNuevo (turno)'");
