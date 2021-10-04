@@ -1,6 +1,9 @@
 package com.example.ProyectoIntegradorClinica.persistence.entities;
 
 import javax.persistence.*;
+import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
 
 
 @Entity
@@ -10,7 +13,6 @@ public class Odontologo {
     @Id
     @SequenceGenerator(name = "odontologo_sequence", sequenceName = "odontologo_sequence", allocationSize = 1)
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "odontologo_sequence")
-    //@Column(name = "odontologo_id")
     private Integer id;
     private String nombre;
     private String apellido;

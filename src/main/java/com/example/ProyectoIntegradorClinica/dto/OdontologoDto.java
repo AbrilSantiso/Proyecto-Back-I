@@ -3,10 +3,11 @@ package com.example.ProyectoIntegradorClinica.dto;
 import com.example.ProyectoIntegradorClinica.persistence.entities.Odontologo;
 
 import javax.persistence.*;
+import javax.validation.constraints.NotBlank;
 
 
 public class OdontologoDto {
-
+    @NotBlank(message = "No puede estar vacío")
     private Integer id;
     private String nombre;
     private String apellido;

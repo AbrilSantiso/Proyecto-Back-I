@@ -288,3 +288,48 @@
 [2021-09-30 19:33:37] [DEBUG] [PacienteController:51] Iniciando el método 'crearNuevo (paciente)'
 [2021-09-30 19:38:49] [DEBUG] [OdontologoController:41] Iniciando el método 'crearNuevo (odontologo)'
 [2021-09-30 19:38:51] [DEBUG] [PacienteController:51] Iniciando el método 'crearNuevo (paciente)'
+[2021-10-01 14:24:18] [DEBUG] [OdontologoController:26] Iniciando el método 'buscarPorId
+[2021-10-01 14:24:18] [DEBUG] [OdontologoController:31] No se encontró el odontologo
+[2021-10-01 14:24:18] [INFO ] [GlobalExceptionHandler:17] No se encontro el odontologo
+[2021-10-01 14:25:09] [DEBUG] [OdontologoController:41] Iniciando el método 'crearNuevo (odontologo)'
+[2021-10-01 14:25:09] [DEBUG] [OdontologoController:26] Iniciando el método 'buscarPorId
+[2021-10-01 14:25:09] [DEBUG] [OdontologoController:48] Iniciando el método 'actualizar(odontologo)'
+[2021-10-03 22:58:15] [DEBUG] [OdontologoController:41] Iniciando el método 'crearNuevo (odontologo)'
+[2021-10-03 22:58:15] [DEBUG] [OdontologoController:26] Iniciando el método 'buscarPorId
+[2021-10-03 22:58:15] [DEBUG] [OdontologoController:48] Iniciando el método 'actualizar(odontologo)'
+[2021-10-03 22:58:15] [DEBUG] [OdontologoController:64] Iniciando el método 'eliminarPorId'
+[2021-10-03 22:59:56] [DEBUG] [OdontologoController:48] Iniciando el método 'actualizar(odontologo)'
+[2021-10-03 22:59:57] [INFO ] [GlobalExceptionHandler:17] No se encontro el odontologo con el id 1
+[2021-10-03 23:00:05] [DEBUG] [OdontologoController:41] Iniciando el método 'crearNuevo (odontologo)'
+[2021-10-03 23:00:05] [DEBUG] [OdontologoController:26] Iniciando el método 'buscarPorId
+[2021-10-03 23:00:05] [DEBUG] [OdontologoController:48] Iniciando el método 'actualizar(odontologo)'
+[2021-10-03 23:00:05] [DEBUG] [OdontologoController:64] Iniciando el método 'eliminarPorId'
+[2021-10-03 23:00:53] [DEBUG] [OdontologoController:41] Iniciando el método 'crearNuevo (odontologo)'
+[2021-10-03 23:00:54] [DEBUG] [OdontologoController:26] Iniciando el método 'buscarPorId
+[2021-10-03 23:00:54] [DEBUG] [OdontologoController:48] Iniciando el método 'actualizar(odontologo)'
+[2021-10-03 23:00:54] [DEBUG] [OdontologoController:64] Iniciando el método 'eliminarPorId'
+[2021-10-03 23:11:21] [DEBUG] [OdontologoController:41] Iniciando el método 'crearNuevo (odontologo)'
+[2021-10-03 23:11:22] [DEBUG] [OdontologoController:26] Iniciando el método 'buscarPorId
+[2021-10-03 23:11:22] [DEBUG] [OdontologoController:48] Iniciando el método 'actualizar(odontologo)'
+[2021-10-03 23:11:22] [DEBUG] [OdontologoController:64] Iniciando el método 'eliminarPorId'
+[2021-10-03 23:11:52] [DEBUG] [OdontologoController:41] Iniciando el método 'crearNuevo (odontologo)'
+[2021-10-03 23:11:52] [DEBUG] [PacienteController:51] Iniciando el método 'crearNuevo (paciente)'
+[2021-10-03 23:11:52] [DEBUG] [PacienteController:57] Iniciando el método 'crearNuevo (turno)'
+[2021-10-03 23:11:52] [DEBUG] [PacienteController:50] Iniciando el método 'consultarProximosTurnos'
+[2021-10-03 23:11:52] [DEBUG] [OdontologoController:48] Iniciando el método 'actualizar(odontologo)'
+[2021-10-03 23:11:52] [DEBUG] [OdontologoController:76] Iniciando el método 'consultarTodos'
+[2021-10-03 23:11:53] [DEBUG] [OdontologoController:64] Iniciando el método 'eliminarPorId'
+[2021-10-03 23:13:29] [DEBUG] [OdontologoController:64] Iniciando el método 'eliminarPorId'
+[2021-10-03 23:15:12] [DEBUG] [PacienteController:82] Iniciando el método 'eliminarPorId'
+[2021-10-03 23:15:12] [DEBUG] [PacienteController:86] Se eliminó el turno con id 1
+[2021-10-03 23:15:18] [DEBUG] [OdontologoController:64] Iniciando el método 'eliminarPorId'
+[2021-10-03 23:16:25] [DEBUG] [OdontologoController:41] Iniciando el método 'crearNuevo (odontologo)'
+[2021-10-03 23:16:25] [DEBUG] [PacienteController:51] Iniciando el método 'crearNuevo (paciente)'
+[2021-10-03 23:16:26] [DEBUG] [PacienteController:57] Iniciando el método 'crearNuevo (turno)'
+[2021-10-03 23:16:26] [DEBUG] [PacienteController:50] Iniciando el método 'consultarProximosTurnos'
+[2021-10-03 23:16:26] [DEBUG] [OdontologoController:48] Iniciando el método 'actualizar(odontologo)'
+[2021-10-03 23:16:26] [INFO ] [GlobalExceptionHandler:17] No se encontro el odontologo con el id 1
+[2021-10-03 23:16:26] [DEBUG] [OdontologoController:76] Iniciando el método 'consultarTodos'
+[2021-10-03 23:16:26] [DEBUG] [PacienteController:82] Iniciando el método 'eliminarPorId'
+[2021-10-03 23:16:26] [DEBUG] [PacienteController:89] No se encontro el turno con id 1
+[2021-10-03 23:16:26] [INFO ] [GlobalExceptionHandler:17] No se encontro el turno con el id 1

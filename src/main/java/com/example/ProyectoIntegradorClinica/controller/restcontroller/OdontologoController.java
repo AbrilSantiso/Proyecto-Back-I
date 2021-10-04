@@ -4,6 +4,7 @@ import com.example.ProyectoIntegradorClinica.dto.OdontologoDto;
 import com.example.ProyectoIntegradorClinica.exceptions.BadRequestException;
 import com.example.ProyectoIntegradorClinica.exceptions.ResourceNotFoundException;
 import com.example.ProyectoIntegradorClinica.service.imp.OdontologoService;
+import io.swagger.v3.oas.annotations.Operation;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -20,6 +21,7 @@ public class OdontologoController {
     OdontologoService odontologoService;
     private final Logger logger = Logger.getLogger(OdontologoController.class);
 
+    @Operation(summary = "Este método trae el odontologo con el id especificado en la url", tags = "")
     @GetMapping("/buscarId/{id}")
     public ResponseEntity<?> buscarPorId(@PathVariable("id") Integer id) throws ResourceNotFoundException {
 

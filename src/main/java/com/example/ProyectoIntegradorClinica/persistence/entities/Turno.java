@@ -1,6 +1,7 @@
 package com.example.ProyectoIntegradorClinica.persistence.entities;
 
 import javax.persistence.*;
+import javax.validation.constraints.NotNull;
 import java.time.LocalDateTime;
 import java.util.Objects;
 
@@ -11,6 +12,7 @@ public class Turno {
     @Id
     @SequenceGenerator(name = "turnos_sequence", sequenceName = "turnos_sequence", allocationSize = 1)
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "turnos_sequence")
+    @NotNull
     private Integer id;
 
     private LocalDateTime fechaYHora;
