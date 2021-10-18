@@ -46,7 +46,7 @@ Permite crear, modificar, eliminar, buscar y listar odontologos, pacientes y tur
         ```json
         {
             "id": "1",
-            "nombre": Martina",
+            "nombre": "Martina",
             "apellido": "Gonzalez",
             "dni": "123456789",
             "domicilio": {
