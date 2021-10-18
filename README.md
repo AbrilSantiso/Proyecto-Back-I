@@ -39,10 +39,10 @@ Permite crear, modificar, eliminar, buscar y listar odontologos, pacientes y tur
         }
         ```
     
--  Actualizar existente: `PUT` a `PATH/pacientes/actualizar`
+-  Actualizar un paciente existente: `PUT` a `PATH/pacientes/actualizar`
     -  `200 OK` → se actualizó correctamente
-    -  `400 BAD REQUEST` → Hubo un error en los datos recibidos
-    -  `404 NOT FOUND` → no se encontró el paciente con id recibido
+    -  `400 BAD REQUEST` → Hay un error en los datos recibidos
+    -  `404 NOT FOUND` → No se encontró el paciente con id recibido
         ```json
         {
             "id": "1",
@@ -58,10 +58,13 @@ Permite crear, modificar, eliminar, buscar y listar odontologos, pacientes y tur
         }
         ```
     
--  Eliminar por id: `DELETE` a `PATH/pacientes/{id}`
-    -  `204 NO CONTENT` → se borró correctamente
-    -  `404 NOT FOUND` → no se encontró el paciente con id recibido
+-  Eliminar por id: `DELETE` a `PATH/pacientes/eliminarId/{id}`
+    -  `200 OK` → Se elimino correctamente
+    -  `404 NOT FOUND` → No se encontró al paciente con el id {id}
 
 
--  Obtener todos: `GET` a `PATH/pacientes`
+-  Consultar todos: `GET` a `PATH/pacientes/todos`
+
+
+
  
