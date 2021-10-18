@@ -27,7 +27,7 @@ Permite crear, modificar, eliminar, buscar y listar odontologos, pacientes y tur
     -  `400 BAD REQUEST` → Hay un error en los datos enviados
         ```json
         {
-            "nombre": Martina",
+            "nombre": "Martina",
             "apellido": "Gonzalez",
             "dni": "123456789",
             "domicilio": {
