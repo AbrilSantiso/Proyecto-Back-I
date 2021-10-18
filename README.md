@@ -65,6 +65,8 @@ Permite crear, modificar, eliminar, buscar y listar odontologos, pacientes y tur
 
 -  Consultar todos: `GET` a `PATH/pacientes/todos`
 
+
+
 ### Odontólogos
 
 -  Buscar por id: `GET` a `PATH/odontologos/buscarId/{id}`
@@ -104,5 +106,42 @@ Permite crear, modificar, eliminar, buscar y listar odontologos, pacientes y tur
   
 
 
+### Turnos
+    
+-  Buscar por id: `GET` a `PATH/turnos/buscarId/{id}`
+    -  `200 OK` → Devuelve el turno
+    -  `404 NOT FOUND` → No se encontró un turno con ese ID
 
+-  Registrar nuevo turno: `POST` a `PATH/turnos/nuevo`
+    -  `200 OK` → Se registró correctamente
+    -  `400 BAD REQUEST` → Hubo un error en los datos recibidos
+        ```json
+        {
+            "paciente": {"id": "1"},
+            "odontologo": {"id": "1"},
+            "fechaYHora": "2021-11-23T17:00:00"
+        }
+        ```
+
+-  Actualizar un turno existente: `PUT` a `PATH/turnos/actualizar`
+    -  `200 OK` → Se actualizó correctamente
+    -  `400 BAD REQUEST` → Hubo un error en los datos recibidos
+    -  `404 NOT FOUND` → No se encontró el turno con id recibido
+        ```json
+        {
+              "id": "1",
+              "paciente": {"id": "1"},
+              "odontologo": {"id": "1"},
+              "fechaYHora": "2021-11-23T17:00:00"
+        }
+        ```
+    
+-  Eliminar por id: `DELETE` a `PATH/turnos/eliminarId/{id}`
+    -  `200 NO CONTENT` → El turno se borró correctamente
+    -  `404 NOT FOUND` → No se encontró el turno con id recibido
+
+
+-  Consultar todos: `GET` a `PATH/turnos/todos`
+
+-  Consultar solo los turnos de la proxima semana: `GET` a `PATH/turnos/proximaSemana`
  
