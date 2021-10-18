@@ -23,7 +23,7 @@ Permite crear, modificar, eliminar, buscar y listar odontologos, pacientes y tur
     -  `404 NOT FOUND` → No se encontró al paciente con el id {id}
 
 -  Crear un paciente: `POST` a `PATH/pacientes/nuevo`
-    -  `200 OK` → se registró correctamente
+    -  `200 OK` → Se creo correctamente
     -  `400 BAD REQUEST` → Hay un error en los datos enviados
         ```json
         {
@@ -64,6 +64,44 @@ Permite crear, modificar, eliminar, buscar y listar odontologos, pacientes y tur
 
 
 -  Consultar todos: `GET` a `PATH/pacientes/todos`
+
+### Odontólogos
+
+-  Buscar por id: `GET` a `PATH/odontologos/buscarId/{id}`
+    -  `200 OK` → devuelve el odontólogo
+    -  `404 NOT FOUND` → No se encontro el odontologo
+    -  
+-  Crear nuevo odontologo: `POST` a `PATH/odontologos/nuevo`
+    -  `200 OK` →   Se creo correctamente
+    -  `400 BAD REQUEST` → Hay un error en los datos recibidos
+          ```json
+            {
+                "nombre": "Andrea",
+                "apellido": "Gomez",
+                "matricula": "1236"
+            }
+          ```
+        
+-  Actualizar existente: `PUT` a `PATH/odontologos/actualizar`
+    -  `200 OK` → Se actualizo correctamente
+    -  `400 BAD REQUEST` → Hubo un error en los datos recibidos
+    -  `404 NOT FOUND` → No se encontro el odontologo con el id recibido
+          ```json
+          {
+              "id": "1",
+              "nombre": "Andrea",
+              "apellido": "Gomez",
+              "matricula": "1236"
+          }
+          ```
+        
+-  Eliminar por id: `DELETE` a `PATH/odontologos/eliminarId/{id}`
+    -  `200 OK` → Se elimino correctamente
+    -  `404 NOT FOUND` → No se encontró el odontólogo con id recibido
+
+
+-  Consultar todos: `GET` a `PATH/odontologos/todos`
+  
 
 
 
